@@ -17,10 +17,9 @@
   .page.theme_auto .header::before,
   .page.theme_auto .header::after,
   .page.page.theme_auto .header__theme-menu-button,
-  .page.theme_light .main__content-concentrate-title,
-  .page.theme_light .main__content-question-title,
-  .page.theme_light .main__content-answer-title
-  {
+  .page.theme_auto .main__content-concentrate-title,
+  .page.theme_auto .main__content-question-title,
+  .page.theme_auto .main__content-answer-title {
     --accent-color: #353430;
   }
 
@@ -52,7 +51,6 @@
 .page.page.theme_light .header__theme-menu-button,
 .page.theme_light .main__content-concentrate-title,
 .page.theme_light .main__content-question-title,
-.page.theme_light .main__content-answer-title
- {
+.page.theme_light .main__content-answer-title {
   --accent-color: #353430;
 }

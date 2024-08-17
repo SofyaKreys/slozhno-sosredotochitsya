@@ -11,6 +11,7 @@
 
 .header {
   position: relative;
+  height: 100vh;
 }
 
 .header::before {
@@ -241,6 +242,7 @@
 /* ссылка */
 
 .decor-link {
+  text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -335,7 +337,7 @@ border-block-end: 1px solid var(--text-color);
 
 /* вторая секция медиазапросов ПЛАНШЕТ*/
 
-@media (min-width: 768px) and (max-width: 1024px)  {
+@media (min-width: 768px) and (max-width: 1024px) {
   .main__content-question-title {
     max-width: 236px;
   }
@@ -346,7 +348,7 @@ border-block-end: 1px solid var(--text-color);
 }
 /* вторая секция медиазапросов ДЕСКТОП */
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .main__content-question-title {
     max-width: 315px;
   }
@@ -428,7 +430,7 @@ border-block-end: 1px solid var(--text-color);
 
 /* третья секция медиазапросов ДЕСКТОП */
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .main__content-answer {
     flex-direction: row;
     margin-block-start: 55px;
@@ -496,7 +498,7 @@ border-block-end: 1px solid var(--text-color);
   .gallery__img-street {
     grid-row: 3 / span 1;
     grid-column: 2 / span 2;
-  } 
+  }
 }
 
 /* медиазапрос галереии на ДЕСКТОП */
@@ -539,7 +541,7 @@ border-block-end: 1px solid var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 84vh;
+  height: 100vh;
   margin-block-start: 32px;
 }
 
@@ -572,7 +574,7 @@ border-block-end: 1px solid var(--text-color);
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: bold;
   color: var(--heading-color);
-  text-shadow: 4px 4px 0 var(--accent-color); 
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -581,14 +583,14 @@ border-block-end: 1px solid var(--text-color);
   }
   .footer {
     margin-block-start: 68px;
-    height: 127vh;
+    height: 100vh;
   }
 }
 
 @media (min-width: 1024px) {
   .footer {
 
-    height: 94vh;
+    height: 100vh;
     margin-block-start: 70px;
   }
 

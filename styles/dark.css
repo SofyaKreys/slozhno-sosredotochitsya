@@ -9,7 +9,7 @@
   --text-color: #f1b2ce;
   --background-color: #000028;
   --heading-color: #db00ff;
-  --bg-image: url(../images/cover-image-dark.png)
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark {
@@ -22,5 +22,5 @@
   --text-color: #f1b2ce;
   --background-color: #000028;
   --heading-color: #db00ff;
-  --bg-image: url(../images/cover-image-dark.png)
+  --bg-image: url(../images/cover-image-dark.png);
 }
