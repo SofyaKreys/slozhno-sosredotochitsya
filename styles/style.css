@@ -11,6 +11,7 @@
 
 .header {
   position: relative;
+  min-height: 668px;
   height: 100vh;
   padding: 10px 10px 0 10px;
 }
@@ -545,6 +546,7 @@ border-block-end: 1px solid var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 668px;
   height: 100vh;
   margin-block-start: 32px;
   padding: 0 10px 10px 10px;
