@@ -3,10 +3,56 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --title-color: #353430;
+    --text-color: #353430;
+    --background-color: #fff1f7;
+    --heading-color: #ffc2e6;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color-hover: #32312d66;
+  }
+
+  .page.theme_auto .header::before,
+  .page.theme_auto .header::after,
+  .page.page.theme_auto .header__theme-menu-button,
+  .page.theme_light .main__content-concentrate-title,
+  .page.theme_light .main__content-question-title,
+  .page.theme_light .main__content-answer-title
+  {
+    --accent-color: #353430;
+  }
+
+  .page.theme_auto .decor-text {
+    display: none;
+  }
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #ff8dcb;
+  --title-color: #353430;
+  --text-color: #353430;
+  --background-color: #fff1f7;
+  --heading-color: #ffc2e6;
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color-hover: #32312d66;
+}
+
+.page.theme_light .decor-text {
+  display: none;
+}
+
+.page.theme_light .header::before,
+.page.theme_light .header::after,
+.page.page.theme_light .header__theme-menu-button,
+.page.theme_light .main__content-concentrate-title,
+.page.theme_light .main__content-question-title,
+.page.theme_light .main__content-answer-title
+ {
+  --accent-color: #353430;
 }
