@@ -557,7 +557,7 @@ border-block-end: 1px solid var(--text-color);
 }
 
 .footer::after {
-  display: inline-block; 
+  display: inline-block;
   content: '';
   height: 25px;
   width: 25px;
