@@ -26,6 +26,20 @@
   .page.theme_auto .decor-text {
     display: none;
   }
+
+  .page:not(.theme_dark) .header::before,
+  .page:not(.theme_dark) .header::after,
+  .page:not(.theme_dark) .header__theme-menu-button,
+  .page:not(.theme_dark) .main__content-concentrate-title,
+  .page:not(.theme_dark) .main__content-question-title,
+  .page:not(.theme_dark) .main__content-answer-title {
+    --accent-color: #353430;
+  }
+
+  .page:not(.theme_dark) .decor-text {
+    display: none;
+  }
+
 }
 
 .page.theme_light {
