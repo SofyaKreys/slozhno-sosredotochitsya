@@ -34,7 +34,7 @@
 }
 
 .header::after,
-.footer::after{
+.footer::after {
   display: inline-block;
   content: '';
   height: 25px;
