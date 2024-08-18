@@ -12,6 +12,7 @@
     --heading-color: #ffc2e6;
     --bg-image: url(../images/cover-image-light.png);
     --accent-color-hover: #32312d66;
+    --bg-color: #fff1f7;
   }
 
   .page.theme_auto .header::before,
@@ -54,6 +55,7 @@
   --heading-color: #ffc2e6;
   --bg-image: url(../images/cover-image-light.png);
   --accent-color-hover: #32312d66;
+  --bg-color: #fff1f7;
 }
 
 .page.theme_light .decor-text {

@@ -5,19 +5,24 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-color: var(--bg-color);
   /* padding: 10px; */
 /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   position: relative;
   min-height: 668px;
   height: 100vh;
   padding: 10px 10px 0 10px;
 }
 
-.header::before {
+.header::before,
+.footer::before {
   position: absolute;
+  inset-block-start: 10px;
   inset-inline-end: 10px;
   display: block;
   content: '';
@@ -28,7 +33,8 @@
   border-inline-end: 1px solid var(--accent-color);
 }
 
-.header::after {
+.header::after,
+.footer::after{
   display: inline-block;
   content: '';
   height: 25px;
@@ -43,6 +49,7 @@
 .decor-text {
   /* position */
   position: absolute;
+  inset-block-start: 10px;
   inset-inline-end: 19px;
   display: flex;
   flex-direction: row;
@@ -69,7 +76,8 @@
 }
 
 .header__theme-menu {
-  padding-block-start: 62px;
+  align-self: center;
+  /* padding-block-start: 62px; */
 }
 
 .header__theme-menu-list {
@@ -120,7 +128,7 @@
   font-family: 'IBM Plex mono', sans-serif;
   line-height: 0.825;
   color: var(--heading-color);
-  margin-block-start: 65px;
+  /* margin-block-start: 65px; */
   font-weight: bold;
   text-transform: lowercase;
 }
@@ -142,8 +150,9 @@
 
 .title-wrapper {
   display: flex;
+  align-self: center;
   justify-content: flex-end;
-  margin-block: 55px 32px;
+  /* margin-block: 55px 32px; */
 }
 
 /* медиа общие свойства всего файла ПЛАНШЕТ*/
@@ -154,9 +163,11 @@
   }
   .decor-text {
     inset-inline-end: 29px;
+    inset-block-start: 20px;
   }
   .header::before {
     inset-inline-end: 20px;
+    inset-block-start: 20px;
   }
 }
 
@@ -164,16 +175,18 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .header__theme-menu {
-    padding-block-start: 168px;
+    /* padding-block-start: 168px; */
   }
 
   .header__title {
-    margin-block-start: 173px;
+    /* margin-block-start: 173px; */
     margin-inline-start: -20px;
   }
 
   .title-wrapper {
-    margin-block: 162px 140px;
+    /* margin-block: 162px 140px; */
+    /* display: flex;
+    align-self: center; */
   }
 }
 
@@ -185,9 +198,11 @@
   }
   .decor-text {
     inset-inline-end: 29px;
+    inset-block-start: 20px;
   }
   .header::before {
     inset-inline-end: 20px;
+    inset-block-start: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -198,15 +213,16 @@
 
   .header__theme-menu {
     padding-block-start: 0;
+    align-self: start;
   }
 
   .header__title {
-    margin-block-start: 274px;
-    font-size: 157px;
+    /* margin-block-start: 274px; */
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
   .title-wrapper {
-    margin-block: 114px 89px;
+    /* margin-block: 114px 89px; */
   }
 
   .title {
@@ -558,6 +574,10 @@ border-block-end: 1px solid var(--text-color);
 /* футер */
 
 .footer {
+    /* новая хуйня */
+    position: relative;
+    /* конец новой хуйни */
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -568,7 +588,7 @@ border-block-end: 1px solid var(--text-color);
   padding: 0 10px 10px 10px;
 }
 
-.footer::before {
+/* .footer::before {
   
   align-self: end;
   display: block;
@@ -588,11 +608,11 @@ border-block-end: 1px solid var(--text-color);
   background-color: transparent;
   border-block-end: 1px solid var(--accent-color);
   border-inline-start: 1px solid var(--accent-color);
-}
+} */
 
 .footer__title {
-  margin-inline: auto;
-  font-size: 116px;
+  margin: auto;
+  font-size: clamp(7.25rem, 5.7332rem + 6.4715vw, 9.875rem);
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: bold;
   color: var(--heading-color);
@@ -601,7 +621,7 @@ border-block-end: 1px solid var(--text-color);
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .footer__title {
-    font-size: 120px;
+    font-size: clamp(7.25rem, 5.7332rem + 6.4715vw, 9.875rem);
   }
   .footer {
     margin-block-start: 68px;
@@ -619,7 +639,7 @@ border-block-end: 1px solid var(--text-color);
   }
 
   .footer__title {
-    font-size: 158px;
+    font-size: clamp(7.25rem, 5.7332rem + 6.4715vw, 9.875rem);
  
   }
 }
