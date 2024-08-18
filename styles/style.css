@@ -545,7 +545,8 @@ border-block-end: 1px solid var(--text-color);
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+
   min-height: 668px;
   height: 100vh;
   margin-block-start: 32px;
@@ -553,6 +554,7 @@ border-block-end: 1px solid var(--text-color);
 }
 
 .footer::before {
+  
   align-self: end;
   display: block;
   content: '';
@@ -574,9 +576,7 @@ border-block-end: 1px solid var(--text-color);
 }
 
 .footer__title {
-  flex: 1;
-  align-content: center;
-  align-self: center;
+  margin-inline: auto;
   font-size: 116px;
   font-family: 'IBM Plex mono', sans-serif;
   font-weight: bold;
