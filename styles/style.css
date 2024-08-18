@@ -574,10 +574,7 @@ border-block-end: 1px solid var(--text-color);
 /* футер */
 
 .footer {
-    /* новая хуйня */
-    position: relative;
-    /* конец новой хуйни */
-
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
