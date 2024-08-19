@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  margin:auto;
   background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
@@ -155,9 +156,9 @@
   /* margin-block: 55px 32px; */
 }
 
-/* медиа общие свойства всего файла ПЛАНШЕТ*/
+/* медиа общие свойства всего файла и хеедера ПЛАНШЕТ*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .header {
     padding: 20px 20px 0 20px;
   }
@@ -169,62 +170,22 @@
     inset-inline-end: 20px;
     inset-block-start: 20px;
   }
-}
-
-/* медиа запрос хедер ПЛАНШЕТ*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header__theme-menu {
-    /* padding-block-start: 168px; */
-  }
-
   .header__title {
-    /* margin-block-start: 173px; */
     margin-inline-start: -20px;
-  }
-
-  .title-wrapper {
-    /* margin-block: 162px 140px; */
-    /* display: flex;
-    align-self: center; */
   }
 }
 
 /* медиазапрос хедер ДЕСКТОП */
 
 @media (min-width: 1024px) {
-  .header {
-    padding: 20px 20px 0 20px;
-  }
-  .decor-text {
-    inset-inline-end: 29px;
-    inset-block-start: 20px;
-  }
-  .header::before {
-    inset-inline-end: 20px;
-    inset-block-start: 20px;
-  }
-}
-@media (min-width: 1024px) {
   .header__theme-menu-list {
     display: flex;
     justify-content: center;
   }
-
   .header__theme-menu {
     padding-block-start: 0;
     align-self: start;
   }
-
-  .header__title {
-    /* margin-block-start: 274px; */
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .title-wrapper {
-    /* margin-block: 114px 89px; */
-  }
-
   .title {
     max-width: 50%;
   }
@@ -279,8 +240,8 @@
 }
 
 .decor-link:hover {
-/* text-decoration: underline solid var(--text-color); */
-border-block-end: 1px solid var(--text-color);
+  /* text-decoration: underline solid var(--text-color); */
+  border-block-end: 1px solid var(--text-color);
 
 }
 
@@ -299,21 +260,18 @@ border-block-end: 1px solid var(--text-color);
 
 /* первая секция медиазапросов ПЛАНШЕТ*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .main__content {
     margin-block-start: 75px;
     padding: 0 20px 0 20px;
   }
-
   .main__content-concentrate {
     flex-direction: row;
     gap: 20px;
   }
-
   .main__content-concentrate-title {
     min-width: 236px;
   }
-  
 }
 
 /* первая секция медиазапрос ДЕСКТОП */
@@ -321,16 +279,9 @@ border-block-end: 1px solid var(--text-color);
 @media (min-width: 1024px) {
   .main__content {
     margin-block-start: 76px;
-    padding: 0 20px 0 20px;
   }
-
   .main__content-concentrate-title {
     min-width: 315px;
-  }
-
-  .main__content-concentrate {
-    flex-direction: row;
-    gap: 20px;
   }
 }
 
@@ -372,22 +323,21 @@ border-block-end: 1px solid var(--text-color);
 
 /* вторая секция медиазапросов ПЛАНШЕТ*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .main__content-question-title {
     max-width: 236px;
   }
-
   .main__content-question {
     margin-block-start: 78px;
   }
 }
+
 /* вторая секция медиазапросов ДЕСКТОП */
 
 @media (min-width: 1024px) {
   .main__content-question-title {
     max-width: 315px;
   }
-
   .main__content-question-list {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -453,12 +403,11 @@ border-block-end: 1px solid var(--text-color);
 
 /* третья секция медиазапросов ПЛАНШЕТ*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .main__content-answer {
     flex-direction: row;
     margin-block-start: 78px;
   }
-
   .main__content-answer-title {
     min-width: 236px;
   }
@@ -468,10 +417,8 @@ border-block-end: 1px solid var(--text-color);
 
 @media (min-width: 1024px) {
   .main__content-answer {
-    flex-direction: row;
     margin-block-start: 55px;
   }
-
   .main__content-answer-title {
     min-width: 315px;
   }
@@ -499,77 +446,37 @@ border-block-end: 1px solid var(--text-color);
 
 /* медиазапросы галереии ПЛАНШЕТ*/
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   .main__content-gallery-picture {
     display: grid;
     justify-content: center;
     gap: 20px;
     grid-template: repeat(3, auto) / repeat(3, auto);
   }
-
   .main__content-gallery {
     margin-block-start: 83px;
     gap: 20px;
   }
-
   .gallery__img-sunset {
     grid-column: 1 / span 2;
   }
-
   .gallery__img {
     height: 100%;
     object-fit: cover;
   }
-
   .gallery__img-ice-cream {
     grid-row: 1 / span 2;
     grid-column: 3 / span 1;
   }
-
   .gallery__img-tape {
     grid-row: 2 / span 2;
     grid-column: 1 / span 1;
   }
-
   .gallery__img-street {
     grid-row: 3 / span 1;
     grid-column: 2 / span 2;
   }
 }
-
-/* медиазапрос галереии на ДЕСКТОП */
-
-@media (min-width: 1024px) {
-  .main__content-gallery-picture {
-    display: grid;
-    justify-content: center;
-    grid-template: repeat(3, auto) / repeat(3, auto);
-  }
-
-  .gallery__img-sunset {
-    grid-column: 1 / span 2;
-  }
-
-  .gallery__img {
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .gallery__img-ice-cream {
-    grid-row: 1 / span 2;
-    grid-column: 3 / span 1;
-  }
-
-  .gallery__img-tape {
-    grid-row: 2 / span 2;
-    grid-column: 1 / span 1;
-  }
-
-  .gallery__img-street {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 2;
-  }
-} 
 
 /* футер */
 
@@ -578,34 +485,11 @@ border-block-end: 1px solid var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   min-height: 668px;
   height: 100vh;
   margin-block-start: 32px;
   padding: 0 10px 10px 10px;
 }
-
-/* .footer::before {
-  
-  align-self: end;
-  display: block;
-  content: '';
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
-}
-
-.footer::after {
-  display: inline-block;
-  content: '';
-  height: 25px;
-  width: 25px;
-  background-color: transparent;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
-} */
 
 .footer__title {
   margin: auto;
@@ -616,27 +500,15 @@ border-block-end: 1px solid var(--text-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  .footer__title {
-    font-size: clamp(7.25rem, 5.7332rem + 6.4715vw, 9.875rem);
-  }
+@media (min-width: 768px) {
   .footer {
     margin-block-start: 68px;
-    height: 100vh;
     padding: 0 20px 20px 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .footer {
-
-    height: 100vh;
     margin-block-start: 70px;
-    padding: 0 20px 20px 20px;
-  }
-
-  .footer__title {
-    font-size: clamp(7.25rem, 5.7332rem + 6.4715vw, 9.875rem);
- 
   }
 }
