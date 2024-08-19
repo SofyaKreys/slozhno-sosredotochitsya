@@ -127,6 +127,7 @@
   text-transform: lowercase;
   background-color: transparent;
   border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
